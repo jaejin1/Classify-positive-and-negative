@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+
+    h3, h4, div > p {
+        text-align: center;
+    }
+</style>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h3>문장 테스트 [ 입력한 문장은 긍정일까요, 부정일까요? ]</h3>
+
+    <div>
+        <form action = "/result" method="post">
+        
+            <label for="fname">테스트 문장을 입력하세요</label>
+            <input type="text" id="fname" name="sentence" placeholder="판별하고자 하는 문장을 입력해주세요.">
+            <input type="submit" name="choice" value="Submit"></input>
+        </form>
+    </div>
+
+</body>
+</html>
